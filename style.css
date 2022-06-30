@@ -7,20 +7,44 @@
 body {
     height: 100vh;
     display: flex;
-    background-color: rgb(188, 248, 228);
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #237cd4;
+    color: #fff;
+    font-family: sans-serif;
+    
+}
+
+h1 {
+    text-shadow: 1px 1px black;
+}
+
+.mario-logo {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .memory-game {
     height: 640px;
-    width: 640px;
+    width: 720px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     perspective: 1000px; /* perspectiva do usuario no eixo z, quanto maior, maior o efeito da perspectiva */
 }
 
 .card {
-    height: calc( 33.333% - 10px);
+    height: calc(33.333% - 10px);
     width: calc(25% - 10px);
     margin: 5px;
     position: relative;
@@ -43,7 +67,7 @@ body {
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: rgb(92, 187, 182);
+  background: rgb(180, 240, 17);
   backface-visibility: hidden; /* todo elemento tem uma frente e um verso (ao contrario, como um espelho.) essa propriedade retira o verso */
 }
 
